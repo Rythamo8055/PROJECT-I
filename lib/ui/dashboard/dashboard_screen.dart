@@ -20,7 +20,7 @@ class DashboardScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      'Sugar',
+                      'Outstanding',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.w500,
@@ -29,20 +29,14 @@ class DashboardScreen extends StatelessWidget {
                     const SizedBox(height: 8),
                     // In a real app we'd use a dotted font or CustomPainter for dotted text
                     Text(
-                      '90',
+                      '₹ 45,000',
                       style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                            fontSize: 72,
-                            letterSpacing: 2,
-                          ),
-                    ),
-                    Text(
-                      'mg/dL',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            fontSize: 64,
                             letterSpacing: 1,
                           ),
                     ),
                     const SizedBox(height: 16),
-                    // Simplified wave graphic
+                    // Simplified wave graphic/divider
                     SizedBox(
                       height: 40,
                       child: Center(
@@ -59,18 +53,17 @@ class DashboardScreen extends StatelessWidget {
               ),
             ),
 
-            // Average Glucose Full Width Card
+            // Main Featured Full Width Card
             const SliverPadding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               sliver: SliverToBoxAdapter(
                 child: SizedBox(
                    height: 140,
                    child: MetricCard(
-                     title: 'Average Glucose',
-                     value: '84',
-                     unit: 'mg/dL',
-                     glowColor: AppColors.sunsetOrange,
-                     // customGraphic: Circle rings go here later
+                     title: 'Paid This Month',
+                     value: '₹ 1.2',
+                     unit: 'L',
+                     glowColor: AppColors.rareJade,
                    ),
                 ),
               ),
@@ -90,27 +83,27 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 delegate: SliverChildListDelegate([
                   const MetricCard(
-                    title: 'Time in range',
-                    value: '100',
-                    unit: '%',
-                    glowColor: AppColors.rareJade,
+                    title: 'Overdue',
+                    value: '2',
+                    unit: 'Inv',
+                    glowColor: AppColors.sunsetOrange,
                   ),
                   const MetricCard(
-                    title: 'Viriability',
-                    value: '6.8',
-                    unit: '%',
+                    title: 'Drafts',
+                    value: '4',
+                    unit: 'Inv',
                     glowColor: AppColors.floralMagenta,
                   ),
                   const MetricCard(
-                    title: 'Vitamin D',
-                    value: '83',
+                    title: 'Clients',
+                    value: '12',
                     glowColor: AppColors.deepOcean,
                   ),
                   const MetricCard(
-                    title: 'Spikes',
-                    value: '0',
+                    title: 'Growth',
+                    value: '+14',
                     unit: '%',
-                    glowColor: AppColors.sunsetOrange, // Maybe deeper orange
+                    glowColor: AppColors.starship, 
                   ),
                 ]),
               ),
