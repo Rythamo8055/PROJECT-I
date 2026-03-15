@@ -34,7 +34,7 @@ class MainScaffold extends ConsumerWidget {
           Positioned(
             left: 20,
             right: 20,
-            bottom: 30, // Hovering above the bottom
+            bottom: MediaQuery.paddingOf(context).bottom + 20, // Hovering above the bottom safe area
             child: GlassBottomNav(
               currentIndex: currentIndex,
               onTap: (index) {
