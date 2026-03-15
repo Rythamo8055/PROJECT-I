@@ -20,12 +20,42 @@ Freelancers and solo consultants (single-user focus, no multi-tenancy).
 - **Goal:** Approachable, very professional, yet easy to interact with on a daily basis.
 
 ## 5. Core Features (MVP)
-1. **Invoice & Quotation Creation:** Editable line items, custom tax rates (GST ready but generic enough for international use).
-2. **Quotation to Invoice Conversion:** Seamlessly turn an approved quote into a payable invoice with one tap.
-3. **Client Management:** Simple address book for client details (Name, Billing Address, GST no., Email).
-4. **PDF Generation & Brand Customization:** On-device PDF rendering with custom brand logos and business details.
-5. **Export/Share:** Native share sheet integration (export to WhatsApp, Email).
-6. **Dashboard:** High-level overview of Accounts Receivable and recent activity.
+
+### 📄 1. Dynamic Invoice Generation
+- **Quick Creation:** Build an invoice with a 30-second workflow.
+- **Line Items:** Add multiple services/products with description, quantity/hours, and rate.
+- **Auto-Calculations:** The app instantly calculates subtotals, tax percentages, and final totals.
+- **Tax Support:** Advanced tax structures including GST (CGST/SGST/IGST).
+- **Discounts:** Apply flat or percentage-based discounts to the final total.
+- **Currency Support:** Select from multiple international currencies (₹, $, €, etc.).
+- **Quotation to Invoice:** Seamlessly turn an approved quote into a payable invoice with one tap.
+
+### 👥 2. Client Management
+- **Address Book:** Save recurring clients with their Name, Email, Address, and Tax ID (GSTIN).
+- **Auto-Fill:** Instantly pull saved client details into new invoices to save time.
+- **Freemium Limits:** Keep track of the 5-client limit on the free tier.
+
+### 🖨️ 3. PDF Export & Output
+- **Premium PDFs:** Generate visually stunning PDF invoices that match the app's brand.
+- **Custom Branding:** Upload your own personal or business logo to the invoice header.
+- **Payment Footers:** Attach your UPI ID, QR code, or Bank Account details at the bottom of the PDF.
+
+### 🚀 4. Immediate Sharing
+- **1-Tap WhatsApp:** Export the PDF and beam it directly to a client via a generated WhatsApp (wa.me) link.
+- **Email Integration:** Pre-fill email subjects and bodies with the attached PDF.
+
+### 📊 5. Business Dashboard
+- **HUD Overview:** Get a quick top-level view of your business health.
+- **Tracking States:** Filter invoices by Draft, Sent, or Paid.
+- **Monthly Earnings:** View how much you've made this month vs pending invoices.
+
+## 6. Future / Pro-Tier Features
+- **Cloud Sync:** Backup and sync your invoices across multiple devices.
+- **Unlimited Limits:** Uncap the 30-invoice/month and 5-client limitations.
+- **Custom Themes:** Unlock alternative color schemes for exported PDFs.
+- **Reminders & Push Notifications:** Auto-alert clients of upcoming due dates.
+- **Export "Waiting" Game:** A fun mini-game while the PDF generates.
+
 
 ## 6. Authentication
 - Google Sign-In (Primary, for speed)
