@@ -33,7 +33,6 @@ Freelancers and solo consultants (single-user focus, no multi-tenancy).
 ### 👥 2. Client Management
 - **Address Book:** Save recurring clients with their Name, Email, Address, and Tax ID (GSTIN).
 - **Auto-Fill:** Instantly pull saved client details into new invoices to save time.
-- **Freemium Limits:** Keep track of the 5-client limit on the free tier.
 
 ### 🖨️ 3. PDF Export & Output
 - **Premium PDFs:** Generate visually stunning PDF invoices that match the app's brand.
@@ -49,20 +48,17 @@ Freelancers and solo consultants (single-user focus, no multi-tenancy).
 - **Tracking States:** Filter invoices by Draft, Sent, or Paid.
 - **Monthly Earnings:** View how much you've made this month vs pending invoices.
 
-## 6. Future / Pro-Tier Features
+## 6. Future Features
 - **Cloud Sync:** Backup and sync your invoices across multiple devices.
-- **Unlimited Limits:** Uncap the 30-invoice/month and 5-client limitations.
 - **Custom Themes:** Unlock alternative color schemes for exported PDFs.
-- **Reminders & Push Notifications:** Auto-alert clients of upcoming due dates.
 - **Export "Waiting" Game:** A fun mini-game while the PDF generates.
 
-
-## 6. Authentication
+## 7. Authentication
 - Google Sign-In (Primary, for speed)
 - Email + Password (Fallback)
 - Supabase Auth handles sessions.
 
-## 7. Data Model (Supabase schema)
+## 8. Data Model (Supabase schema)
 - `users`: Managed by Supabase Auth (`id`, `email`, `created_at`).
 - `freelancer_profiles`: `id` (references `users.id`), `business_name`, `address`, `gst_number`, `logo_url`, `bank_details`.
 - `clients`: `id`, `user_id`, `name`, `email`, `billing_address`, `gst_number`.
